@@ -159,74 +159,61 @@ print(type_summary.to_string(index=False))
 
 # Function to convert a DataFrame to a text table
 def df_to_telegram_table(df):
-    df = df[[
-        'Symbol', 'Current Price (SGD)', 'Shares',
-        'Invested (SGD)', 'Current Value (SGD)',
-        'P/L (SGD)', 'P/L (SGD)%'
-    ]].fillna('').copy()
+    df = df[['Symbol', 'Current Price (SGD)', 'P/L (SGD)%']].fillna('').copy()
 
     # Format numbers
-    df['Current Price (SGD)'] = df['Current Price (SGD)'].apply(lambda x: f"{x:,.2f}" if isinstance(x, (int, float)) else '')
-    df['Invested (SGD)'] = df['Invested (SGD)'].apply(lambda x: f"{x:,.2f}" if isinstance(x, (int, float)) else '')
-    df['Current Value (SGD)'] = df['Current Value (SGD)'].apply(lambda x: f"{x:,.2f}" if isinstance(x, (int, float)) else '')
-    df['P/L (SGD)'] = df['P/L (SGD)'].apply(lambda x: f"{x:,.2f}" if isinstance(x, (int, float)) else '')
-    df['P/L (SGD)%'] = df['P/L (SGD)%'].apply(lambda x: f"{x:.2f}%" if isinstance(x, (int, float)) else '')
+    df['Current Price (SGD)'] = df['Current Price (SGD)'].apply(
+        lambda x: f"{x:,.2f}" if isinstance(x, (int, float)) else ''
+    )
+    df['P/L (SGD)%'] = df['P/L (SGD)%'].apply(
+        lambda x: f"{x:.1f}%" if isinstance(x, (int, float)) else ''
+    )
 
-    headers = ['Symbol', 'Price', 'Shares', 'Invested', 'Current', 'P/L', 'P/L %']
-    col_widths = [16, 8, 8, 10, 10, 10, 8]
+    headers = ['Sym', 'Price', 'P/L%']
+    col_widths = [8, 8, 6]
 
     table = ' '.join(h.ljust(w) for h, w in zip(headers, col_widths)) + '\n'
     table += ' '.join('-' * w for w in col_widths) + '\n'
 
     for _, row in df.iterrows():
-        # Determine gain/loss emoji
         try:
-            pnl_val = float(row['P/L (SGD)'].replace(',', ''))
+            pnl_val = float(row['P/L (SGD)%'].replace('%', ''))
             emoji = '🟢' if pnl_val > 0 else '🔻' if pnl_val < 0 else '➖'
         except:
             emoji = ''
 
         row_items = [
-            str(row['Symbol'])[:16],
+            str(row['Symbol'])[:8],
             str(row['Current Price (SGD)'])[:8],
-            str(row['Shares'])[:5],
-            str(row['Invested (SGD)'])[:10],
-            str(row['Current Value (SGD)'])[:10],
-            str(row['P/L (SGD)'])[:10],
-            str(row['P/L (SGD)%'])[:8],
+            str(row['P/L (SGD)%'])[:6],
         ]
         table += emoji + ' ' + ' '.join(item.ljust(w) for item, w in zip(row_items, col_widths)) + '\n'
 
     return table
 
-def format_type_summary_table(df):
-    # Define columns and their widths
-    headers = ['Rank', 'Type', 'Total P/L (SGD)', 'Avg P/L (%)']
-    col_widths = [6, 30, 18, 14]
+# def format_type_summary_table(df):
+#     headers = ['Type', 'Avg P/L%']
+#     col_widths = [20, 10]
 
-    # Header line
-    table = ' '.join(h.ljust(w) for h, w in zip(headers, col_widths)) + '\n'
-    table += ' '.join('-' * w for w in col_widths) + '\n'
+#     table = ' '.join(h.ljust(w) for h, w in zip(headers, col_widths)) + '\n'
+#     table += ' '.join('-' * w for w in col_widths) + '\n'
 
-    # Row lines
-    for _, row in df.iterrows():
-        row_items = [
-            str(row['Rank']),
-            str(row['Type'])[:30],
-            f"{row['Total P/L (SGD)']:.2f}",
-            f"{row['Avg P/L (%)']:.2f}" if pd.notnull(row['Avg P/L (%)']) else 'N/A'
-        ]
-        table += ' '.join(item.ljust(w) for item, w in zip(row_items, col_widths)) + '\n'
+#     for _, row in df.iterrows():
+#         row_items = [
+#             str(row['Type'])[:20],
+#             f"{row['Avg P/L (%)']:.1f}%" if pd.notnull(row['Avg P/L (%)']) else 'N/A'
+#         ]
+#         table += ' '.join(item.ljust(w) for item, w in zip(row_items, col_widths)) + '\n'
 
-    return table
-type_table = format_type_summary_table(type_summary)
+#     return table
+# type_table = format_type_summary_table(type_summary)
 
 # Create message text
 message = "*📊 Daily Portfolio Summary*\n\n"
 message += "*💼 Holdings Overview:*\n"
 message += "```\n" + df_to_telegram_table(results_df) + "\n```"
-message += "*📈 Performance by Type (Ranked):*\n"
-message += "```\n" + type_table + "\n```"
+# message += "*📈 Performance by Type (Ranked):*\n"
+# message += "```\n" + type_table + "\n```"
 
 # Set your Telegram credentials
 bot_token = os.getenv("BOT_TOKEN")
