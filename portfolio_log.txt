@@ -1,0 +1,58 @@
+
+--- Script Run at 2025-06-30 10:58:41.300136 ---
+
+USD to SGD: 1.275885
+HKD to SGD: 0.1625310298555394
+                                               Symbol                       Type  ...  P/L (SGD)  P/L (SGD)%
+2                                                AAPL              Core Equities  ...     511.11    25555.50
+20                                               META              Core Equities  ...     649.95      227.19
+10                                             D05.SI              Core Equities  ...    2463.20       97.55
+27                                               SPLG              Core Equities  ...    3324.72       38.76
+29                                                VOO              Core Equities  ...     594.38       37.72
+22                                               NVDA              Core Equities  ...      45.44       29.16
+31                              Fundsmith Equity Fund              Core Equities  ...    3588.38       27.60
+25                                                 SE              Core Equities  ...      78.84       24.06
+23                                             OV8.SI              Core Equities  ...     180.60       19.18
+32                            Global Core Equity Fund              Core Equities  ...    8679.36       17.72
+9                                              CSPX.L              Core Equities  ...    3491.24       14.74
+30                                             VWRA.L              Core Equities  ...     501.66        7.65
+38                                       CHOC-FINANCE         Bonds / Cash / CPF  ...    1322.79        6.68
+26                                                SMH  Satellite ETFs / Thematic  ...     220.48        6.62
+5                                                BLOK              Core Equities  ...      38.75        5.26
+37                     Dimensional Global Core Equity              Core Equities  ...     662.04        4.87
+34                                           MMF-CSOP         Bonds / Cash / CPF  ...    3628.92        4.35
+36                                      REITPLUS-SYFE         REITs (SG Focused)  ...    2220.50        3.80
+7                                             C2PU.SI         REITs (SG Focused)  ...     -22.00       -0.53
+13                                               IBIT  Satellite ETFs / Thematic  ...     -15.17       -3.16
+1                                             A17U.SI         REITs (SG Focused)  ...    -622.80      -11.40
+3                                             AJBU.SI         REITs (SG Focused)  ...   -1034.10      -14.07
+0                                             3067.HK              Core Equities  ...     -83.66      -18.59
+14                                               IZRL              Core Equities  ...   -1339.70      -19.55
+12                                             HST.SI              Core Equities  ...    -150.00      -22.73
+28                                            T82U.SI         REITs (SG Focused)  ...    -835.80      -26.05
+19                                            ME8U.SI         REITs (SG Focused)  ...   -1534.77      -27.70
+18                                               MCHI              Core Equities  ...   -3538.16      -28.84
+15                                            JYEU.SI         REITs (SG Focused)  ...    -956.89      -29.61
+21                                            N2IU.SI         REITs (SG Focused)  ...    -336.00      -34.60
+17                                            M44U.SI         REITs (SG Focused)  ...   -1691.47      -39.66
+4                                                ARKK              Core Equities  ...   -4818.89      -40.04
+16                                               KWEB              Core Equities  ...   -1080.20      -41.93
+6                                             BUOU.SI         REITs (SG Focused)  ...    -375.00      -42.23
+24                                               RGTI              Core Equities  ...     -86.18      -43.27
+11                                               GRAB              Core Equities  ...     -54.85      -44.27
+8                                                COUR              Core Equities  ...   -4504.98      -82.60
+33  Dimensional Emerging Markets Sustainsbillity C...              Core Equities  ...       0.00         NaN
+35               PICMO GIS Emerging Markets Bond Fund         Bonds / Cash / CPF  ...       0.00         NaN
+
+[39 rows x 8 columns]
+
+Total Profit/Loss (SGD): 9121.74
+
+Performance by Type (Ranked):
+ Rank                      Type  Total P/L (SGD)  Avg P/L (%)
+    1             Core Equities          9153.05  1120.223478
+    2        Bonds / Cash / CPF          4951.71     5.515000
+    3 Satellite ETFs / Thematic           205.31     1.730000
+    4        REITs (SG Focused)         -5188.33   -22.205000
+Telegram response status: 200
+Telegram response body: {"ok":true,"result":{"message_id":27,"from":{"id":7814005623,"is_bot":true,"first_name":"Portfolio Updates","username":"managePortfolioBot"},"chat":{"id":-4898883981,"title":"Portfolio","type":"group","all_members_are_administrators":true,"accepted_gift_types":{"unlimited_gifts":false,"limited_gifts":false,"unique_gifts":false,"premium_subscription":false}},"date":1751252325,"text":"\ud83d\udcca Daily Portfolio Summary\n\n\ud83d\udcbc Holdings Overview:\nSymbol           Price    Shares   Invested   Current    P/L        P/L %   \n---------------- -------- -------- ---------- ---------- ---------- --------\n\ud83d\udfe2 AAPL             256.55   2.0      2.00       513.11     511.11     25555.50\n\ud83d\udfe2 META             936.03   1.0      286.08     936.03     649.95     227.19% \n\ud83d\udfe2 D05.SI           44.94    111.0    2,525.14   4,988.34   2,463.20   97.55%  \n\ud83d\udfe2 SPLG             92.27    129.0    8,578.37   11,903.09  3,324.72   38.76%  \n\ud83d\udfe2 VOO              723.36   3.0      1,575.71   2,170.09   594.38     37.72%  \n\ud83d\udfe2 NVDA             201.27   1.0      155.83     201.27     45.44      29.16%  \n\ud83d\udfe2 Fundsmith Equity                                         3,588.38   27.60%  \n\ud83d\udfe2 SE               203.26   2.0      327.68     406.52     78.84      24.06%  \n\ud83d\udfe2 OV8.SI           1.87     600.0    941.40     1,122.00   180.60     19.18%  \n\ud83d\udfe2 Global Core Equi                                         8,679.36   17.72%  \n\ud83d\udfe2 CSPX.L           840.81   32.32    23,688.06  27,179.29  3,491.24   14.74%  \n\ud83d\udfe2 VWRA.L           194.52   36.28    6,557.46   7,059.12   501.66     7.65%   \n\ud83d\udfe2 CHOC-FINANCE                                             1,322.79   6.68%   \n\ud83d\udfe2 SMH              355.23   10.0     3,331.84   3,552.32   220.48     6.62%   \n\ud83d\udfe2 BLOK             70.53    11.0     737.09     775.84     38.75      5.26%   \n\ud83d\udfe2 Dimensional Glob                                         662.04     4.87%   \n\ud83d\udfe2 MMF-CSOP                                                 3,628.92   4.35%   \n\ud83d\udfe2 REITPLUS-SYFE                                            2,220.50   3.80%   \n\ud83d\udd3b C2PU.SI          4.12     1000.    4,142.00   4,120.00   -22.00     -0.53%  \n\ud83d\udd3b IBIT             77.47    6.0      480.00     464.83     -15.17     -3.16%  \n\ud83d\udd3b A17U.SI          2.69     1800.    5,464.80   4,842.00   -622.80    -11.40% \n\ud83d\udd3b AJBU.SI          2.34     2700.    7,352.10   6,318.00   -1,034.10  -14.07% \n\ud83d\udd3b 3067.HK          1.83     200.0    450.00     366.34     -83.66     -18.59% \n\ud83d\udd3b IZRL             34.03    162.0    6,853.25   5,513.55   -1,339.70  -19.55% \n\ud83d\udd3b HST.SI           0.85     600.0    660.00     510.00     -150.00    -22.73% \n\ud83d\udd3b T82U.SI          1.13     2100.    3,208.80   2,373.00   -835.80    -26.05% \n\ud83d\udd3b ME8U.SI          2.04     1964.    5,541.33   4,006.56   -1,534.77  -27.70% \n\ud83d\udd3b MCHI             70.40    124.0    12,268.17  8,730.01   -3,538.16  -28.84% \n\ud83d\udd3b JYEU.SI          0.53     4291.    3,231.12   2,274.23   -956.89    -29.61% \n\ud83d\udd3b N2IU.SI          1.27     500.0    971.00     635.00     -336.00    -34.60% \n\ud83d\udd3b M44U.SI          1.19     2163.    4,265.44   2,573.97   -1,691.47  -39.66% \n\ud83d\udd3b ARKK             89.11    81.0     12,036.62  7,217.73   -4,818.89  -40.04% \n\ud83d\udd3b KWEB             43.99    34.0     2,575.95   1,495.75   -1,080.20  -41.93% \n\ud83d\udd3b BUOU.SI          0.85     600.0    888.00     513.00     -375.00    -42.23% \n\ud83d\udd3b RGTI             14.12    8.0      199.17     112.99     -86.18     -43.27% \n\ud83d\udd3b GRAB             6.28     11.0     123.90     69.05      -54.85     -44.27% \n\ud83d\udd3b COUR             11.16    85.0     5,453.92   948.94     -4,504.98  -82.60% \n\u2796 Dimensional Emer                                         0.00               \n\u2796 PICMO GIS Emergi                                         0.00               \n\n\ud83d\udcc8 Performance by Type (Ranked):\nRank   Type                           Total P/L (SGD)    Avg P/L (%)   \n------ ------------------------------ ------------------ --------------\n1      Core Equities                  9153.05            1120.22       \n2      Bonds / Cash / CPF             4951.71            5.51          \n3      Satellite ETFs / Thematic      205.31             1.73          \n4      REITs (SG Focused)             -5188.33           -22.20","entities":[{"offset":0,"length":26,"type":"bold"},{"offset":28,"length":21,"type":"bold"},{"offset":50,"length":3273,"type":"pre"},{"offset":3323,"length":32,"type":"bold"},{"offset":3356,"length":423,"type":"pre"}]}}
