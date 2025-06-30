@@ -43,7 +43,7 @@ python portfolio_report.py
 
 ### 4. Example Output
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 ### 5. Automation
 
