@@ -41,7 +41,7 @@ Script to automatically analyzes your investment portfolio, computes real-time p
 
 python portfolio_report.py
 
-### 4. Exammple Output
+### 4. Example Output
 
 ![alt text](image.png)
 
